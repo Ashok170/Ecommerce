@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" onkeyup="check(event)">
+    <div>
+        <h1>one</h1>
+        <h1>two</h1>
+        <h1>three</h1>
+        <h1>four</h1>
+        <h1>five</h1>
+
+    </div>
+
+</body>
+<script>
+    var entered = ""
+    var container = document.querySelector("div");
+    var elements = container.querySelectorAll("h1")
+    console.log(elements)
+    function check(event) {
+        entered = event.target.toUpperCase.value;
+        if (elements[0].textContent.toUpperCase.value(entered) < 0) {
+            elements[0].style.display = "none"
+        }
+    }
+</script>
+
+</html>

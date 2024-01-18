@@ -1,0 +1,263 @@
+* {
+    padding: 0%;
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: rgb(6, 6, 122);
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.navbarmenu-toggle {
+    display: none;
+}
+
+/*side navbarr */
+.side-navbar {
+    background-color: rgb(11, 11, 79);
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 2s;
+    /* display: none; */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+.headerbtn {
+    padding: 10px 20px 10px 20px;
+    color: white;
+    background-color: black;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+    ;
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.service {
+    padding: 20px;
+}
+
+.service-container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-container-2 div {
+    background-color: #f2f4f7;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.New-Arrival {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.new-arrival-container {
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival-container button {
+    padding: 5% 10% 5% 10%;
+    margin-top: 10px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border-radius: 10px;
+    border: none;
+}
+
+.new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.new input {
+    padding: 10px;
+    width: 80vw;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.new button {
+    background-color: rgb(7, 11, 32);
+    color: white;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 400px;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 40px;
+    background-color: rgb(16, 16, 54);
+    color: white;
+}
+
+.product-section {
+    margin-top: 20px;
+}
+
+.product-search {
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.product-search input:focus {
+    outline: none;
+}
+
+.products {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.product-box {
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.product-box img {
+    border-radius: 10px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 63vh;
+    color: white;
+}
+
+.contact-us {
+    background-color: #1c1344;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    /* Adjust the width based on your design */
+}
+
+.contact-us input {
+    border-radius:5px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.contact-us div {
+    margin-bottom: 15px;
+}
+
+.contact-us h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-us h4 {
+    margin-bottom: 5px;
+}
+.contact button{
+    font-size: 1em;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .navbarmenu-toggle {
+        display:
+            block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .service-container-1 {
+        display: none;
+    }
+
+    .service-container-2 {
+        flex-direction: column;
+    }
+}
